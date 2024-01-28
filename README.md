@@ -2,6 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
 
+### Landing page
+![landing-page](https://github.com/svkrishna10/Custom-Medical-Agent/assets/92803667/902370f3-0553-4ff6-8722-a5b6a7e45cbf)
+### Chatbot 
+![chatbot](https://github.com/svkrishna10/Custom-Medical-Agent/assets/92803667/8d6a2875-a9e9-4ec6-8f0f-272cd7fd3d6f)
+### Translation
+![translation](https://github.com/svkrishna10/Custom-Medical-Agent/assets/92803667/07af4133-8529-4bd0-92bd-8bc61055f71a)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
