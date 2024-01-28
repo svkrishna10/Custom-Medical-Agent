@@ -1,0 +1,68 @@
+/* styles.css */
+
+@tailwind base;
+@tailwind components;
+
+.user {
+  @apply bg-black text-white justify-end;
+}
+
+.assistant {
+  @apply bg-lightgray text-black mt-4 italic justify-start;
+}
+
+.message {
+  @apply p-2 rounded;
+}
+
+.translation-btn{
+  @apply ml-auto;
+}
+
+@tailwind utilities;
+
+/* chat.component.css */
+
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  margin-top: 0px;
+}
+
+.chat-card {
+  width: 70%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.chat-container {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+
+.input-container {
+  display: flex;
+}
+
+.input-container input {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.input-container button {
+  
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chat-container button {
+  margin-left: auto;
+}

@@ -1,0 +1,35 @@
+
+<nav class="flex justify-between items-center py-8 px-6 mx-auto max-w-screen-xl md:px-12 lg:px-16 xl:px-24">
+    <h1 class="pt-4 text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tighter leading-tight whitespace-nowrap bg-gradient-to-r from-blue-800 via-blue-600 to-black text-transparent bg-clip-text">
+        MEDBOT: A Custom Medical Chatbot
+    </h1>
+    <img src="https://acv.engineering/images/open-ai.png" style="width: 100px; height: 100px;">
+</nav>
+<div class="w-full min-h-screen font-sans text-gray-900 bg-gradient-to-br from-transparent to-blue-100" :class="sidebarOpen ? 'overflow-hidden h-screen' : ''">
+    
+
+    <div class="flex flex-wrap-reverse gap-y-24 justify-between py-12 px-6 mx-auto max-w-screen-xl sm:px-8 md:px-12 lg:px-16 xl:px-24">
+        <div class="relative z-10 md:w-1/2 w-full order-2 md:order-1">
+            <img class="absolute top-0 right-0 md:-top-4 md:-right-8 w-24 h-auto" src="" alt="" />
+            
+            <h1 class="pt-4 text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tighter leading-tight whitespace-nowrap">
+                Empowering Wellness  <br />
+                with AI Insight <br />
+                <span class="whitespace-nowrap text-blue">Your Personal Medical Ally </span>
+            </h1>
+            <p class="pt-8 sm:text-lg max-w-md font-normal text-gray-600 leading-relaxed">
+                Fueled by the OpenAI API, our AI medical agent MEDBOT is your personalized health partner. Need answers to your queries related to health and medication? YOU are at the RIGHT PLACE!. Welcome to the future of healthcare, redefined by AI with you in focus.
+            </p>
+            <div class="flex pt-8 space-x-4 sm:space-x-6">
+                <button class="flex justify-center items-center w-full sm:w-auto h-13 px-8 bg-blue font-medium text-white rounded-xl whitespace-nowrap hover:shadow-primary transition-shadow duration-300" routerLink="/chat">
+                    Get started
+                </button>
+                
+            </div>
+        </div>
+
+        <div class="relative md:w-1/2 w-full order-1 md:order-2">
+            <img class="w-96 lg:w-full drop-shadow-2xl self-center lg:self-end rounded-full ml-40" src="https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg" alt="" />
+        </div>
+    </div>
+</div>

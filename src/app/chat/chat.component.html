@@ -1,0 +1,36 @@
+<!-- app.component.html -->
+
+<!-- chat.component.html class="relative md:w-1/2 w-full order-1 md:order-2"-->
+<!--w-20 lg:w-full drop-shadow-2xl self-center lg:self-end -->
+<div >
+  <img class="rounded-full" style="justify-content: center; width: 200px; height: 200px; display: block; justify-items: center; align-items: center; justify-items: center; margin-left: auto;
+  margin-right: auto; margin-top: 40px;"  src="https://thumbs.dreamstime.com/b/chatbot-healthcare-abstract-concept-vector-illustration-artificial-intelligence-caregiver-chatbot-healthcare-use-anonymous-214748027.jpg" alt="" />
+  <p class="pt-4 ml-auto text-2xl sm:text-2xl lg:text-4xl font-bold tracking-tighter leading-tight whitespace-nowrap bg-gradient-to-r from-blue-800 via-blue-600 to-black text-transparent bg-clip-text " style="text-align: center; " >
+    Hi this is MEDBOT, your personalized medical chatbot. Ask me anything you want....
+  </p>
+  
+</div>
+
+<div class="centered-container">
+  
+  <div class="chat-card">
+    
+    <div class="chat-container">
+      
+      <div *ngFor="let message of chatMessages">
+        <div [ngClass]="message.role + ' message'" style="display: inline-block;">
+          {{ message.content }}
+        </div>
+        <button (click)="onSelect(message)" *ngIf="message.role === 'assistant' " style="display: flex; justify-content: flex-end;" class="bg-orange text-white p-2 px-4 rounded" >Translation</button>
+      </div>
+    </div>
+
+    <div class="input-container">
+      <input [(ngModel)]="userMessage" placeholder="Enter your message" class="border p-2" />
+      <button (click)="sendMessage()" class="bg-blue text-white p-2 px-4 rounded">Send</button>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
+
+
